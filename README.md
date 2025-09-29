@@ -1,3 +1,9 @@
+## 프로젝트 개요
+- 프로젝트 명: TAKO(TCG AUCTION KOREA)
+- 기간: 2025.08.07 ~ 2025.09.26 (54일)
+- 인원: 5명(FE:2, BE:1, INFRA:1)
+
+## 기술 구현
 ### 1. API 호출 관리
 - lib → hooks 계층 구조를 통한 데이터 Fetching & Response Handling
 ```
