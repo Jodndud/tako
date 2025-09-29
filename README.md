@@ -1,6 +1,5 @@
 ### 1. API 호출 관리
 - lib → hooks 계층 구조를 통한 데이터 Fetching & Response Handling
-lib/
 ```
 // lib/card.ts
 // 카드 검색페이지에서 검색
@@ -29,7 +28,6 @@ export async function getCard(cardId: number | string, signal?: AbortSignal) {
   return res.data;
 }
 ```
-hooks/
 
 ```
 // hooks/useReview.ts
@@ -94,12 +92,12 @@ compoents/
 ㄴ-auction/
 ㄴ-shop/
 ```
-- atoms등 서비스 전역 공통 컴포넌트는 common폴더에 넣음
+- `atoms`등 서비스 전역 공통 컴포넌트는 common폴더에 넣음
 - 라우터 폴더와 컴포넌트를 동일한 폴더명으로 구분하여 해당 페이지에서 사용하는 컴포넌트는 동일한 폴더에 두고 사용하면 일관성이 가장 잘 유지됨을 경험
-- 컴포넌트 구분 기준은 같은 로직이 3번 반복될 때 사용. 2번 중복 시 사용하게 됐을 때 하나의 컴포넌트가 사용하지 않게 되면 컴포넌트로 나눈 이유가 사라짐.
+- 컴포넌트 구분 기준은 같은 로직이 `3번 반복될 때` 사용. 2번 중복 시 사용하게 됐을 때 하나의 컴포넌트가 사용하지 않게 되면 컴포넌트로 나눈 이유가 사라짐.
 
 ### 3. 데이터 캐싱 전략
-- React Query를 활용한 서버 상태 관리 및 성능 최적화
+- `React Query`를 활용한 서버 상태 관리 및 성능 최적화
 ```
 // hooks/useMysellInfo.ts
 import { useQuery } from "@tanstack/react-query";
@@ -139,22 +137,22 @@ export function useMyInfo() {
 - isLoading, isError, data를 자동으로 제공 → 코드량 감소 & 유지보수성 향상.
 
 ### 4. UI/UX 일관성
-shadcn/ui 라이브러리 적극 활용을 통한 디자인 시스템 구축
-사용 Components
-- Accordian: 토글형식의 리스트 컴포넌트
-- Checkbox: 체크박스
-- Input: 인풋박스
-- Label: 라벨
-- Textarea: 텍스트박스
-- Button: 버튼
-- Navigation Menu : 네비게이션 메뉴
-- Scroll-area : 스크롤 가능 박스
-- Sheet : 사이드 메뉴 오픈 버튼
-- Calendar : 달력 UI
-- Pagination : 페이지네이션 버튼
+- `shadcn/ui` 라이브러리 적극 활용을 통한 디자인 시스템 구축
+- 사용 Components
+    - Accordian: 토글형식의 리스트 컴포넌트
+    - Checkbox: 체크박스
+    - Input: 인풋박스
+    - Label: 라벨
+    - Textarea: 텍스트박스
+    - Button: 버튼
+    - Navigation Menu : 네비게이션 메뉴
+    - Scroll-area : 스크롤 가능 박스
+    - Sheet : 사이드 메뉴 오픈 버튼
+    - Calendar : 달력 UI
+    - Pagination : 페이지네이션 버튼
 
 ### 5. Form 관리
-react-hook-form 기반의 간편하고 안정적인 데이터 전송 및 검증
+- `react-hook-form` 기반의 간편하고 안정적인 데이터 전송 및 검증
 ```
 "use client";
 
@@ -252,6 +250,5 @@ const {
   - useForm<AuctionFormProps>() 제네릭으로 타입을 지정하면, register와 errors에서 타입 안전성 확보.
 
 ### 6. 사용자 UX고려 예외처리
-- 예시) 회원가입 예외처리 사진
 ![회원가입 화면](./readme-img/signup.png)
 - 회원가입 시 모든 예외 처리: 이메일 형식/중복, 인증번호 유효성, 비밀번호 형식/일치, 닉네임 형식/중복 확인
