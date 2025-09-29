@@ -1,0 +1,38 @@
+{
+    "pokemon": {
+        "fire": "fire",
+        "water": "water",
+        "grass": "grass",
+        "lightning": "lightning",
+        "psychic": "psychic",
+        "fighting": "fighting",
+        "darkness": "darkness",
+        "metal": "metal",
+        "dragon": "dragon",
+        "fairy": "fairy"
+    },
+    "yugioh": {
+        "불": "fire",
+        "물": "water",
+        "바람": "grass",
+        "땅": "fighting",
+        "빛": "lightning",
+        "어둠": "darkness",
+        "신": "fairy",
+        "마법": "dragon",
+        "함정": "metal"
+    },
+    "cookierun": {
+        "red": "fire",
+        "blue": "water",
+        "green": "grass",
+        "yellow": "lightning",
+        "purple": "psychic",
+        "mix": "dragon"
+    },
+    "SSAFY": {
+        "가위": "fire",
+        "바위": "water",
+        "보": "grass"
+    }
+}

@@ -1,0 +1,22 @@
+/* 전역 스타일 통합 관리 */
+
+/* 기본 스타일 */
+@import url('../app/globals.css');
+
+/* 카드 관련 스타일 */
+@import url('../components/cards/all-cards.css');
+
+/* 컴포넌트별 스타일 (필요시 추가) */
+
+/* @import '../components/ui/styles.css'; */
+
+/* @import '../components/header/styles.css'; */
+
+/* toast animations */
+@keyframes toast-in {
+	from { opacity: 0; transform: translateX(120%); }
+	to { opacity: 1; transform: translateX(0); }
+}
+@keyframes toast-out {
+	from { opacity: 1; transform: translateX(0); }
+	to { opacity: 0; transform: translateX(120%); }

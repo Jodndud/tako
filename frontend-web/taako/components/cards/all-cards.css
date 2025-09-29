@@ -1,0 +1,31 @@
+/* 카드 기본 스타일 */
+@import url('./cards.css');
+@import url('./css/base.css');
+
+/* 카드 레어리티별 스타일 */
+@import url('./css/amazing-rare.css');
+@import url('./css/basic.css');
+@import url('./css/cosmos-holo.css');
+@import url('./css/radiant-holo.css');
+@import url('./css/rainbow-alt.css');
+@import url('./css/rainbow-holo.css');
+@import url('./css/regular-holo.css');
+@import url('./css/reverse-holo.css');
+@import url('./css/secret-rare.css');
+@import url('./css/shiny-rare.css');
+@import url('./css/shiny-v.css');
+@import url('./css/shiny-vmax.css');
+@import url('./css/swsh-pikachu.css');
+
+/* 트레이너 카드 스타일 */
+@import url('./css/trainer-full-art.css');
+@import url('./css/trainer-gallery-holo.css');
+@import url('./css/trainer-gallery-secret-rare.css');
+@import url('./css/trainer-gallery-v-max.css');
+@import url('./css/trainer-gallery-v-regular.css');
+
+/* V 카드 스타일 */
+@import url('./css/v-full-art.css');
+@import url('./css/v-max.css');
+@import url('./css/v-regular.css');
+@import url('./css/v-star.css');

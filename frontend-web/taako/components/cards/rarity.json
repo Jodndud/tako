@@ -1,0 +1,99 @@
+{
+    "rarityMapping": {
+        "Radiant Rare": "radiant rare",
+        "trainer gallery rare holo": "trainer gallery rare holo",
+        "Rare Holo Cosmos": "rare holo cosmos",
+        "Rare Holo V": "rare holo v",
+        "Uncommon": "uncommon",
+        "Rare Holo VSTAR": "rare holo vstar",
+        "Rare Holo VMAX": "rare holo vmax",
+        "Common": "common",
+        "Trainer Gallery Rare Holo": "trainer gallery rare holo",
+        "Rare Secret": "rare secret",
+        "Pikachu": "pikachu",
+        "Rare Shiny": "rare shiny",
+        "Rare Shiny V": "rare shiny v",
+        "Rare Shiny VMAX": "rare shiny vmax"
+    },
+    "foilMapping": {
+        "radiant rare": "/effects/angular.png",
+        "trainer gallery rare holo": "/effects/trainerbg.png",
+        "rare holo cosmos": "/effects/cosmos.png",
+        "rare holo v": "/effects/illusion.png",
+        "uncommon": "/effects/wave.png",
+        "rare holo vstar": "/effects/ancient.png",
+        "rare holo vmax": "/effects/vmaxbg.jpg",
+        "common": "/effects/wave.png",
+        "rare secret": "/effects/rainbow.jpg",
+        "pikachu": "/effects/rainbow.jpg",
+        "rare shiny": "/effects/glitter.png",
+        "rare shiny v": "/effects/glitter.png",
+        "rare shiny vmax": "/effects/glitter.png"
+    },
+    "maskMapping": {
+        "rare holo cosmos": "/effects/cosmos-middle-trans.png",
+        "rare holo vmax": "/effects/vmaxbg.jpg",
+        "rare holo vstar": "/effects/ancient.png",
+        "rare holo v": "/effects/illusion-mask.png",
+        "trainer gallery rare holo": "/effects/trainerbg.png",
+        "radiant rare": "/effects/angular.png",
+        "uncommon": "/effects/wave.png",
+        "common": "/effects/wave.png",
+        "rare secret": "/effects/rainbow.jpg",
+        "pikachu": "/effects/rainbow.jpg",
+        "rare shiny": "/effects/glitter.png",
+        "rare shiny v": "/effects/glitter.png",
+        "rare shiny vmax": "/effects/glitter.png"
+    },
+    "patternMapping": [
+        {
+            "pattern": "pikachu",
+            "rarity": "pikachu"
+        },
+        {
+            "pattern": "rare secret",
+            "rarity": "rare secret"
+        },
+        {
+            "pattern": "rare shiny vmax",
+            "rarity": "rare shiny vmax"
+        },
+        {
+            "pattern": "rare shiny v",
+            "rarity": "rare shiny v"
+        },
+        {
+            "pattern": "rare shiny",
+            "rarity": "rare shiny"
+        },
+        {
+            "pattern": "rare holo vmax",
+            "rarity": "rare holo vmax"
+        },
+        {
+            "pattern": "rare holo vstar",
+            "rarity": "rare holo vstar"
+        },
+        {
+            "pattern": "rare holo v",
+            "rarity": "rare holo v"
+        },
+        {
+            "pattern": "rare holo cosmos",
+            "rarity": "rare holo cosmos"
+        },
+        {
+            "pattern": "trainer gallery",
+            "rarity": "trainer gallery rare holo"
+        },
+        {
+            "pattern": "radiant",
+            "rarity": "radiant rare"
+        },
+        {
+            "pattern": "uncommon",
+            "rarity": "uncommon"
+        }
+    ],
+    "defaultRarity": "common"
+}
