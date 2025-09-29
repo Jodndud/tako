@@ -1,10 +1,10 @@
-## 프로젝트 개요
+### 프로젝트 개요
 - 프로젝트 명: TAKO(TCG AUCTION KOREA)
 - 기간: 2025.08.07 ~ 2025.09.26 (54일)
 - 인원: 5명(FE:2, BE:1, INFRA:1)
 
-## 기술 구현
-### 1. API 호출 관리
+### 기술 구현
+1. API 호출 관리
 - lib → hooks 계층 구조를 통한 데이터 Fetching & Response Handling
 ```
 // lib/card.ts
@@ -75,8 +75,7 @@ export function useReview() {
     }
 }
 ```
-
-### 2. 컴포넌트 구조화
+2. 컴포넌트 구조화
 - 도메인 기반 통합 관리로 유지보수성과 재사용성 확보
 ```
 app/
@@ -102,7 +101,7 @@ compoents/
 - 라우터 폴더와 컴포넌트를 동일한 폴더명으로 구분하여 해당 페이지에서 사용하는 컴포넌트는 동일한 폴더에 두고 사용하면 일관성이 가장 잘 유지됨을 경험
 - 컴포넌트 구분 기준은 같은 로직이 `3번 반복될 때` 사용. 2번 중복 시 사용하게 됐을 때 하나의 컴포넌트가 사용하지 않게 되면 컴포넌트로 나눈 이유가 사라짐.
 
-### 3. 데이터 캐싱 전략
+3. 데이터 캐싱 전략
 - `React Query`를 활용한 서버 상태 관리 및 성능 최적화
 ```
 // hooks/useMysellInfo.ts
@@ -142,7 +141,7 @@ export function useMyInfo() {
 - 새로고침(F5)이나 다른 페이지 이동 후에도 캐시 TTL이 유지되면 네트워크 호출 생략 → API 호출 횟수 감소 → 성능 개선.
 - isLoading, isError, data를 자동으로 제공 → 코드량 감소 & 유지보수성 향상.
 
-### 4. UI/UX 일관성
+4. UI/UX 일관성
 - `shadcn/ui` 라이브러리 적극 활용을 통한 디자인 시스템 구축
 - 사용 Components
     - Accordian: 토글형식의 리스트 컴포넌트
@@ -157,7 +156,7 @@ export function useMyInfo() {
     - Calendar : 달력 UI
     - Pagination : 페이지네이션 버튼
 
-### 5. Form 관리
+5. Form 관리
 - `react-hook-form` 기반의 간편하고 안정적인 데이터 전송 및 검증
 ```
 "use client";
@@ -255,6 +254,6 @@ const {
 - TypeScript와의 강력한 통합
   - useForm<AuctionFormProps>() 제네릭으로 타입을 지정하면, register와 errors에서 타입 안전성 확보.
 
-### 6. 사용자 UX고려 예외처리
+6. 사용자 UX고려 예외처리
 <img src="./readme-img/signup.png" alt="회원가입 화면" width="400"/>
 - 예) 회원가입 시 모든 예외 처리: 이메일 형식/중복, 인증번호 유효성, 비밀번호 형식/일치, 닉네임 형식/중복 확인
