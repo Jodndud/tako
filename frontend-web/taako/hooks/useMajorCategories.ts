@@ -15,7 +15,6 @@ export function useMajorCategories() {
       setMajorLoading(true);
       try {
         const res = await getMajorCategories();
-        // console.log(res);
         setMajorCategories(res.result);
       } catch (err) {
         console.error(err);
