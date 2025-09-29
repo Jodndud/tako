@@ -250,5 +250,5 @@ const {
   - useForm<AuctionFormProps>() 제네릭으로 타입을 지정하면, register와 errors에서 타입 안전성 확보.
 
 ### 6. 사용자 UX고려 예외처리
-![회원가입 화면](./readme-img/signup.png)
+<img src="./readme-img/signup.png" alt="회원가입 화면" width="200"/>
 - 회원가입 시 모든 예외 처리: 이메일 형식/중복, 인증번호 유효성, 비밀번호 형식/일치, 닉네임 형식/중복 확인
